@@ -1,0 +1,1 @@
+Projekt WSB Merito 2023 - Narzędzia wspierające wytwarzanie oprogramowania 
