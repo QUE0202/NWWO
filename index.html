@@ -1,25 +1,92 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Przewodnik po Londynie</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-     
-     body {background-color: beige;}
-     h1 {color: green;}
-     
-    </style>
+  <title>Wyszukiwarka</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./style_adm.css">
 </head>
 <body>
-    <header>
-    <h1>"Testowy tytuł strony"</h1>
-    </header>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="#">Age</a></li>
+        <li><a href="#">Gender</a></li>
+        <li><a href="#">Geo</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Dodaj sekcję profilu -->
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-text pull-left">
+      <p class="navbar-link">Użytkownik: @Root</p>
+    </div>
+    <div class="navbar-text pull-right">
+      <a href="login.info.html" class="navbar-link">Zaloguj się</a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <hr>
+      <h2><a href="index.html">Multi-Task</a></h2>
+      <hr>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="informacje.html">Informacje</a></li>
+        <li><a href="aplikacje.html">Aplikacje</a></li>
+        <li><a href="maps.html">Mapy</a></li>
+        <li><a href="login.info.html">Logowanie</a></li>
+        <hr>
+      </ul><br>
+    </div>
+    <br>
+    
+    <div class="col-sm-9">
+      <div class="well">
+        <h4>Wyszukiwarka</h4>
+        <hr>
+      </div>
+      <main>
+        <div class="row">
+            
+            <div class="col-sm-4">
+              <div class="well">
+                <h4>Wyszukiwarka</h4>
+                <hr>
+                <form class="google" action="https://www.google.com/search" method="get" target="_blank">
+                    <input class="wyszukaj" type="text" name="q" placeholder="Czego potrzebujesz przybyszu">
+                    <input class="a" type="submit" value="Szukaj">
+                    
+                </form>
+              </div>
+            </div>
+
+            
+          </div>
+      </main>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

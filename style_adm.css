@@ -1,0 +1,91 @@
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 550px}
+    
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+    
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;} 
+}
+
+hr {
+    border-color: #387cb4;
+}
+
+.loader {
+border: 16px solid #f3f3f3; /* Light grey */
+border-top: 16px solid #387cb4; /* Blue */
+border-radius: 50%;
+width: 120px;
+height: 120px;
+animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+.add-task-form {
+display: flex;
+align-items: center;
+}
+
+.add-task-input {
+flex: 1;
+margin-right: 5px; /* Dodaj odstęp między polem tekstowym a przyciskiem */
+}
+
+label {
+display: block; /* Każdy label ma być wyświetlany w nowym wierszu */
+}
+
+.tostxt label {
+display: block;
+}
+
+.tostxt {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.tostxt a {
+color: #337ab7;
+}
+
+.lock-screen {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+justify-content: center;
+align-items: center;
+}
+
+.lock-screen-inner {
+text-align: center;
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+}
+
+.pin-input {
+width: 60px;
+height: 60px;
+font-size: 24px;
+margin: 10px;
+}
+
+.submit-button {
+padding: 10px 20px;
+font-size: 18px;
+}
+
